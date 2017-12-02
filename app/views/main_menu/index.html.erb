@@ -1,0 +1,11 @@
+<div class="container">
+	<h1>Index</h1>
+	<ul>
+		<% @coins.each do |coin| %>
+			<li><%= coin["name"] %></li>
+			<li>USD Price: <%= coin["price_usd"] %></li>
+			<li>BTC Price: <%= coin["price_btc"] %></li>
+		<% end %>
+	</ul>
+
+</div>
